@@ -1,6 +1,8 @@
-# Pushmeup
+# Pushmeup (Customized Version)
 
 ### a gem for various push notification services.
+
+### This version allows for an http proxy. And also comments out the iOS support.
 
 ## Goals
 
