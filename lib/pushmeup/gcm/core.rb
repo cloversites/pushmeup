@@ -29,6 +29,10 @@ module GCM
       end
     end
   end
+  
+  def self.set_proxy(proxy_host, proxy_port = 80, proxy_user = nil, proxy_password = nil)
+    http_proxy(proxy_host, proxy_port, proxy_user, proxy_password)
+  end
 
   def self.send_notification(device_tokens, data = {}, options = {})
     n = GCM::Notification.new(device_tokens, data, options)
